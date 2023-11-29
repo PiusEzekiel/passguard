@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PassGuard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <div class="header">
+    <h1>PassGuard</h1>
+    <p>A web application that accurately rates password strength, identifies vulnerabilities, and provides users with suggestions for creating strong passwords.</p>
+  </div>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    <a href="#" class="right">Login</a>
+  </div>
+  <div class="main">
+    <div class="side">
+      <h3>Password Policy</h3>
+      <form id="policy-form">
+        <label for="min-length">Minimum length:</label>
+        <input type="number" id="min-length" name="min-length" value="8" min="4" max="32"><br>
+        <label for="max-length">Maximum length:</label>
+        <input type="number" id="max-length" name="max-length" value="16" min="4" max="32"><br>
+        <label for="min-lower">Minimum lower case:</label>
+        <input type="number" id="min-lower" name="min-lower" value="1" min="0" max="32"><br>
+        <label for="min-upper">Minimum upper case:</label>
+        <input type="number" id="min-upper" name="min-upper" value="1" min="0" max="32"><br>
+        <label for="min-digit">Minimum digits:</label>
+        <input type="number" id="min-digit" name="min-digit" value="1" min="0" max="32"><br>
+        <label for="min-special">Minimum special characters:</label>
+        <input type="number" id="min-special" name="min-special" value="1" min="0" max="32"><br>
+        <label for="expire-period">Expiration period (days):</label>
+        <input type="number" id="expire-period" name="expire-period" value="30" min="1" max="365"><br>
+        <button type="button" id="save-policy">Save Policy</button>
+      </form>
+    </div>
+    <div class="content">
+      <h3>Password Evaluation</h3>
+      <form id="password-form">
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="password" placeholder="Type your password here"><br>
+        <button type="button" id="evaluate-password">Evaluate Password</button>
+        <button type="button" id="suggest-password">Suggest Password</button>
+      </form>
+      <div id="result">
+        <p id="strength">Strength: </p>
+        <p id="vulnerabilities">Vulnerabilities: </p>
+        <p id="feedback">Feedback: </p>
+        <p id="suggestion">Suggestion: </p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <p>© 2023 PassGuard. All rights reserved.</p>
+  </div>
+  <script src="./javascript/index.js"></script>
+</body>
+</html>
