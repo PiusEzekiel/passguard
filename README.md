@@ -1,7 +1,7 @@
 # passguard
 
 # Overview
-PassGuard is a web application designed to enhance password security by accurately rating password strength, identifying vulnerabilities, and providing users with suggestions for creating robust passwords. This readme provides an overview of the application structure, functionality, and usage.
+PassGuard is a web application designed to enhance password security by accurately rating password strength, identifying vulnerabilities, and providing users with suggestions for creating robust passwords.
 
 # Introduction
 PassGuard is a password management tool that aims to improve the security of user passwords. It includes a password policy configuration section and a password evaluation feature.
