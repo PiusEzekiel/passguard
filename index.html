@@ -15,7 +15,7 @@
     <a href="#">Home</a>
     <a href="#">About</a>
     <a href="#">Contact</a>
-    <a href="#" class="right">Login</a>
+    <a href="login.html" class="right">Login</a>
   </div>
   <div class="main">
     <div class="side">
@@ -35,7 +35,11 @@
         <input type="number" id="min-special" name="min-special" value="1" min="0" max="32"><br>
         <label for="expire-period">Expiration period (days):</label>
         <input type="number" id="expire-period" name="expire-period" value="30" min="1" max="365"><br>
-        <button type="button" id="save-policy">Save Policy</button>
+
+        <a href="login.html" type="button" id="save-policy">
+            <button type="button" id="save-policy">Save Policy </button>
+        </a>
+
       </form>
     </div>
     <div class="content">
@@ -45,6 +49,7 @@
         <input type="password" id="password" name="password" placeholder="Type your password here"><br>
         <button type="button" id="evaluate-password">Evaluate Password</button>
         <button type="button" id="suggest-password">Suggest Password</button>
+        
       </form>
       <div id="result">
         <p id="strength">Strength: </p>
@@ -55,7 +60,7 @@
     </div>
   </div>
   <div class="footer">
-    <p>© 2023 Mars Colonizers. All rights reserved or you'll be colonized!.</p>
+    <p>© 2023 Mars Colonizers. All rights reserved or you'll be COLONIZED!.</p>
   </div>
   <script src="server.js"></script>
   <script src="password_util.js"></script>
